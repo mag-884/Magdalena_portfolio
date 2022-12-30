@@ -1,6 +1,6 @@
 Welcome! 
 
-# magdalena-portfolio
+# Magdalena-portfolio
 
 ## What does this project do?
 This project is to create a portfolio. To share my personal information, built projects, blogs, and contact information.
