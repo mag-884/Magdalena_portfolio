@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+
+html {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --typewriterSpeed: 6s;
+}
+
+
+.welcome { 
+color: #db0101;
+width: 1400px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+h1 {
+font-size: 50px;
+font-weight: 500;
+position: relative;
+padding: 10px 0px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1::before,
+h1::after {
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+h1::before {
+    background: white;
+    animation: typewriter 4s steps(26) 1s forwards;
+}
+
+h1::after {
+    width: 0.125em;
+    animation: typewriter 4s steps(26) 1s forwards; 
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+
+header {
+   margin-top: 10ch;
+    padding: 20px;
+    background-image: url("images/myphoto.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 350px 350px; 
+    font-size: 10px;
+    
+}
+
+.head {
+   
+    position: relative;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+
+header:hover {
+    color: black;
+}
+
+
+body {
+    background-color: #a61111;  
+    
+}
+
+
+.style {
+    background-color: white;
+    opacity: 2;
+}
+
+nav {
+    text-align: center;
+    width: 700px;
+    text-align: center;
+      
+}
+
+
+nav ul {
+    list-style-type: none;
+      
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: 0.4s;
+   
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+    
+}
+a:is(:link, :active, :visited).active {
+    color: white;
+}
+
+nav a:hover {
+    color: red;  
+} 
+
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    display:flexbox
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.left-frame {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    opacity: 0.2;
+
+}
+
+
+.right-frame {
+    width: 100%;
+    min-height: 500px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 15px;
+    color: black;
+    opacity: .9;
+    color: #9b2020;
+    font-weight: bolder;
+    line-height: 2rem;
+    
+
+}
+
+
+.right-frame h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: red;
+    
+}
+
+.right-frame h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #9b2020;
+
+}
+
+.right-frame p {
+    margin: 20px 0;
+    font-weight: 300;
+    line-height: 25px;
+
+
+}
+
+.right-frame a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: black ;
+    color:white;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+} 
+
+.btn {
+    align-items: center;
+
+}
+
+
+.right-frame a:hover {
+    color: red;
+    
+} 
+
+
+.center {
+    text-align: center;
+    height: 100px
+     
+}
+
+h3 {
+    margin: 20px 0;
+    font-weight: 300;
+    line-height: 70px;
+    color: white;
+    font-size: 30px;
+    text-transform: small;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+
+.projects {
+    background: #101010;
+    width: 100%;
+    padding: 100px opx;
+    
+}
+
+.title h4 {
+    color: #101010;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 500px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i {
+    font-size: 60px;
+    display: block;
+    text-align: center;
+    margin: 25px opx;
+    color:white;
+}
+
+h4 {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin bottom: 15px;
+    color: red;
+}
+
+
+.paragraph p {
+
+color: white;
+font-size: 16px;
+line-height: 27px;
+margin-bottom: 25px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.button:hover {
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+.card .button {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+
+.contact-me {
+    width: 100%;
+    padding: 100px 0px; 
+}
+
+.make-contact h5 {
+    color: white;
+    font-size: 50px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center; 
+}
+
+.icons i {
+    font-size: 60px;
+    display: inline-block;
+    margin: 25px 0px;
+    color:white;
+    line-height: 75px;
+    width: 25px;
+    
+}
+
+.icons {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.icons i:hover {
+    color: black;
+}
+
+
+.credit {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+}
+
+
+.credit p {
+    color: black;   
+    background-color: none;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    font-variant: small-caps;
+    line-height: 10%;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
